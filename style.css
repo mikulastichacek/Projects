@@ -1,0 +1,74 @@
+.page {
+    padding: 0px 30px;
+  }
+
+  .page.active {
+    display: block;
+  }
+
+  .page.hidden {
+    display: none;
+  }
+
+ 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: black;
+  }
+
+  table,
+  th,
+  td {
+    padding: 10px;
+    border-collapse: collapse;
+  }
+
+  #userList table {
+    width: 100%;
+  }
+
+  #userList table,
+  #userList th,
+  #userList td {
+    border: 1px solid black;
+    text-align: left;
+  }
+
+  #userForm table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #logo {
+    color: white;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+    
+  input[type="button"] {
+    display: block;
+    margin: auto;
+    padding: 10px 30px;
+  }
+
+ 

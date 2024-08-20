@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence pojištění</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="renderUserList()"></body>
+  <ul>
+    <li>
+        <div id="logo">PojištěníApp</div>
+    </li>
+    <li>
+      <a href="#" onclick="showPage('pageUsers'); return false;">Pojištěnci</a>
+    </li>
+    <li>
+      <a href="#" onclick="showPage('pageAbout'); return false;">O aplikaci</a>
+    </li>
+   </ul>
+  <div id="pageUsers" class="page active">
+    <div id="userList">
+      <h2>Pojištěnci</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Jméno a příjmení</th>
+            <th>Telefon</th>
+            <th>Věk</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div id="userForm">
+      <h2>Nový pojištěnec</h2>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <label for="jmeno">Jméno</label><br />
+              <input type="text" name="jmeno" />
+            </td>
+            <td>
+              <label for="prijmeni">Příjmení</label><br />
+              <input type="text" name="prijmeni" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="vek">Věk</label><br />
+              <input type="number" name="vek" /><br />
+            </td>
+            <td>
+              <label for="tel">Telefon</label><br />
+              <input type="telnum" name="tel" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="button" value="Uložit" onclick="addUser(this.form)" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <div id="pageAbout" class="page hidden">
+    <h2>Evidence pojištění 1.0</h2>
+    <p>
+      Aplikace pro evidenci pojištění.
+    </p>
+  </div>
+  <script src="app.js"></script>
+  <script src="obsluha.js"></script>
+  <script src="Zaznam.js"></script>
+</body>
+</html>
